@@ -21,6 +21,8 @@
 }
 
 .app{
+    position: absolute;
+    mix-blend-mode: multiply;
     color:white;
     background-color: black;
     width:55%;
@@ -34,4 +36,5 @@
     padding-top: 50px;
     padding-left:40px;
     font-size: xxx-large;
+    font-style: italic;
 }
