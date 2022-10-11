@@ -4,9 +4,9 @@
     font-family: 'Source Code Pro', monospace;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(#2e1ab9,#c53098,#ed351b,#f5b92f,#e62424,#c53098);
+    background: radial-gradient(#2e1ab9,#c53098,#ed351b,#f5b92f,#e62424,#c53098);
     background-size: 800% 100%;
-    animation: gradient 3s linear infinite;
+    animation: gradient 10s linear infinite;
     animation-direction:alternate;
 }
 
