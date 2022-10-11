@@ -28,5 +28,10 @@
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 20px;
+}
 
+#name{
+    padding-top: 50px;
+    padding-left:40px;
+    font-size: xxx-large;
 }
