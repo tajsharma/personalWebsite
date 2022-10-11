@@ -3,7 +3,7 @@
     height: 100vh;
     background: radial-gradient(at 0 30%,#2e1ab9,#c53098,#ed351b,#f5b92f,#e62424,#c53098);
     background-size: 600% 100%;
-    animation: gradient 16s linear infinite;
+    animation: gradient 10s linear infinite;
     animation-direction:alternate;
 }
 
