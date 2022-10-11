@@ -8,6 +8,7 @@
     background-size: 800% 100%;
     animation: gradient 10s linear infinite;
     animation-direction:alternate;
+    padding:50px;
 }
 
 @keyframes gradient{
@@ -25,10 +26,8 @@
     mix-blend-mode: multiply;
     color:white;
     background-color: black;
-    width:55%;
+    width:800px;
     height:99vh;
-    margin-top: 50px;
-    margin-bottom: 50px;
     border-radius: 20px;
 }
 
