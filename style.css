@@ -14,3 +14,15 @@
     0% {background-position: 0%}
     100% {background-position: 100%}
 }
+
+.pageContainer{
+    display: flex;
+}
+
+.app{
+    color:white;
+    background-color: black;
+    width:900px;
+    height:100vh;
+
+}
