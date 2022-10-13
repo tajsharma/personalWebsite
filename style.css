@@ -45,4 +45,8 @@ a{
 
 a:link { text-decoration: none; }
 
-
+.stickyNavBar{
+    height: 50px;
+    padding: 10px;
+    display: flex;
+}
