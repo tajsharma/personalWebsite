@@ -46,7 +46,9 @@ a{
 a:link { text-decoration: none; }
 
 .stickyNavBar{
+    font-size: large;
     height: 50px;
     padding: 10px;
     display: flex;
+    justify-content: space-between;
 }
