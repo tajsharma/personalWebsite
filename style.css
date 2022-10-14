@@ -62,3 +62,8 @@ a:link { text-decoration: none; }
     margin: 20px;
     padding:20px;
 }
+
+h1{
+    font-size:100px;
+    margin-bottom:0px;
+}
