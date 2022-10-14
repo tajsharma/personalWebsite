@@ -29,6 +29,8 @@
     width:800px;
     height:99vh;
     border-radius: 20px;
+    display:flex;   
+    flex-direction: column;
 }
 
 #name{
@@ -53,4 +55,10 @@ a:link { text-decoration: none; }
     justify-content: space-between;
     position: sticky;
     top: 0px;
+}
+
+.contentDivTop{
+    height:300px ;
+    margin: 20px;
+    padding:20px;
 }
