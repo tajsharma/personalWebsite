@@ -58,6 +58,7 @@ a:link { text-decoration: none; }
 }
 
 .contentDivTop{
+    display: flex;
     height:300px ;
     margin: 20px;
     padding:20px;
@@ -75,4 +76,8 @@ h3{
 }
 .textDiv{
     width:360px;
+}
+
+.imageDIV{
+    width:300px;
 }
