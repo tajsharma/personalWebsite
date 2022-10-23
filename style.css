@@ -27,7 +27,7 @@
     color:white;
     background-color: black;
     width:800px;
-    height:99vh;
+    height:3000px;
     border-radius: 20px;
     display:flex;   
     flex-direction: column;
@@ -84,5 +84,5 @@ img{
 }
 .contentDivBottom{
     height: 500px;
-    
+
 }
