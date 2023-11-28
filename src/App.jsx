@@ -9,6 +9,18 @@ const App =() =>{
           <Navbar/>
           <Hero/>
         </div>
+
+        <About/>
+        <Experience/>
+        <Tech/>
+        <Works/>
+        <Feedbacks/>
+
+        <div className="realtive z-0">
+          <Contact/>
+          <StarsCanvas/>
+        </div>
+
       </div>
     </BrowserRouter>
   )
