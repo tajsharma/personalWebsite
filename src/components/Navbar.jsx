@@ -49,9 +49,23 @@ const Navbar = () => {
             onClick={()=>setToggle(!toggle)}
           />
           <div className={`${!toggle ? 'hidden' : 'flex'} p-6 
-          bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% absolute top-20
+          bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 absolute top-20
           right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-
+            <ul className='list-none flex justify-end items-start flex-col gap-4'>
+              {navLinks.map((link)=> (
+                <li 
+                  key={link.id}
+                  className={`${
+                    active === link.title ? "text-white" : "text-secondary"
+                  } italic hover:text-white text-[16px] font-medium cursor-pointer`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title)
+                    }}>
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              ))}
+            </ul>
           </div>
             
 
