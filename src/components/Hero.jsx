@@ -13,8 +13,8 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className='font-bold text-black'>
-            Hi, my name is <span className='text-[#ff7ae1] font-bold'> Taj!</span>
+          <h1 className={`${styles.heroHeadText}`}>
+            Hi, my name is <span className='text-[#a656e8] font-bold'> Taj!</span>
           </h1>
         </div>
       </div>
