@@ -49,7 +49,7 @@ const Navbar = () => {
             onClick={()=>setToggle(!toggle)}
           />
           <div className={`${!toggle ? 'hidden' : 'flex'} p-6 
-          bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 absolute top-20
+          bg-gradient-to-r from-gray-700 via-gray-900 to-black absolute top-20
           right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((link)=> (
