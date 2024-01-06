@@ -3,14 +3,14 @@ import {styles} from '../styles';
 import { staggerContainer } from '../utils/motion';
 
 
-const SectionWrapper = (Component, idName) => {
+const SectionWrapper = (Component, idName) => 
     function HOC(){
         return(
             <motion.section>
                 <Component/>
             </motion.section>
-        )
-    }
-}
+        );
+    };
+
 
 export default SectionWrapper
