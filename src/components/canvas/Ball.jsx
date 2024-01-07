@@ -14,7 +14,13 @@ const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <div>Ball</div>
+    <Float>
+      <ambientLight intensity={0.25} />
+      <directionalLight position={[0, 0, 0.05]} />
+      <mesh castShadow receiveShadow scale={2.75}>
+        
+      </mesh>
+    </Float>
   )
 }
 
@@ -22,18 +28,11 @@ const BallCanvas = ({icon}) => {
   return(
     <Canvas
       frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [22, 1, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
+        <OrbitControls enableZoom={false}/>
+        <Ball imgUrl={icon} />
       </Suspense>
 
       <Preload all />
@@ -41,4 +40,4 @@ const BallCanvas = ({icon}) => {
   )
 }
 
-export default Ball
+export default BallCanvas
