@@ -16,7 +16,8 @@ import { textVariant } from "../utils/motion";
 const Experience = () => {
   return (
     <motion.div variants={textVariant()}>
-      
+       <p className = {styles.sectionSubText}>My work so far...</p>
+        <h2 className = { styles.sectionHeadText}>Work Experience</h2>
     </motion.div>
   )
 }
