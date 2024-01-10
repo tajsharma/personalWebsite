@@ -16,6 +16,19 @@ const Works = () => {
         <h2 className = { styles.sectionHeadText}>Personal Projects</h2>
       </motion.div>
 
+      <div className="w-full-flex">
+        <motion.p
+          variants={fadeIn("","",0.1,1)}
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >         
+          The following projects highlight my skills and experience as a software engineer,
+          showcasing real-world examples of my work. Each project is briefly described with
+          links to code repositories, demonstrating my ability to tackle 
+          intricate technical challenges, work with a variety of technologies, and 
+          effectively manage projects.
+        </motion.p>
+      </div>
+
     </>
   )
 }
