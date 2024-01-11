@@ -35,6 +35,11 @@ const ProjectCard = ({
                 />
               </div>
             </div>
+
+            <div className="mt-5">
+              <h3> {name} </h3>
+              <p>{description}</p>
+            </div>
             
           </div >
         </Tilt>
