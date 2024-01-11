@@ -35,8 +35,8 @@ const About = () => {
   return (
     <>
       <motion.div variants = {textVariant()}>
-        <p className = {styles.sectionSubText}>Introduction</p>
-        <h2 className = { styles.sectionHeadText}>Overview.</h2>
+        <p className = {styles.sectionSubText}>you might be wondering..</p>
+        <h2 className = { styles.sectionHeadText}>Who am I?</h2>
       </motion.div>
 
       <motion.p
@@ -48,6 +48,7 @@ const About = () => {
           internet, you'll discover the fusion of my creativity and technical skills.
           Whether you're here to explore my portfolio, seek collaboration, or just
           to satisfy your curiosity about the latest in tech, you've come to the right place.
+          <span className="font-[500] text-white"> Here are a few of the 'monikers' I go by:</span>
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
