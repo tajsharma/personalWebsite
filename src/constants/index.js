@@ -22,7 +22,7 @@ import {
     earth_logo,
     homedepot,
     python_logo,
-    invoum,
+    inovum,
     carrent,
     jobit,
     tripguide,
@@ -122,7 +122,7 @@ import {
     {
       title: "Human",
       company_name: "Earth",
-      icon: starbucks,
+      icon: earth_logo,
       iconBg: "#383E56",
       date: "Dec 2000 - Present",
       points: [
@@ -136,7 +136,7 @@ import {
     {
       title: "Customer Service Lead",
       company_name: "Home Depot",
-      icon: tesla,
+      icon: homedepot,
       iconBg: "#E6DEDD",
       date: "Jun 2019 - Sept 2019",
       points: [
@@ -149,7 +149,7 @@ import {
     {
       title: "Python Developer",
       company_name: "DBWorks LLC",
-      icon: shopify,
+      icon: python_logo,
       iconBg: "#383E56",
       date: "Jan 2023 - Jun 2023",
       points: [
@@ -161,7 +161,7 @@ import {
     {
       title: "Full stack Developer Intern",
       company_name: "Inovum IT Solutions",
-      icon: meta,
+      icon: inovum,
       iconBg: "#E6DEDD",
       date: "Jun 2023 - Aug 2023",
       points: [

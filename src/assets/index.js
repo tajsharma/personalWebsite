@@ -64,4 +64,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  earth_logo,
+  homedepot,
+  inovum,
+  python_logo
 };
