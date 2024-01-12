@@ -26,6 +26,11 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import earth_logo from "./company/earth.png";
+import homedepot from "./company/home_depot.png";
+import python_logo from "./company/python_logo.png";
+import inovum from "./company/inovum.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
