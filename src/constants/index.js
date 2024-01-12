@@ -202,9 +202,9 @@ import {
   
   const projects = [
     {
-      name: "NBA app",
+      name: "NBA Efficiency Predictor",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Machine learning data analytics project utilizing the NBA API to extract and analyze player statistics, focusing on the impact of physical attributes of over 500 NBA players to boost efficiency of NBA offenses",
       tags: [
         {
           name: "react",
