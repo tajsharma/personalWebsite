@@ -204,65 +204,61 @@ import {
     {
       name: "NBA Efficiency Predictor",
       description:
-        "Machine learning data analytics project utilizing the NBA API to extract and analyze player statistics, focusing on the impact of physical attributes of over 500 NBA players to boost efficiency of NBA offenses",
+        "Machine learning data analytics project utilizing the NBA API to determine the impact of physical attributes of over 500 NBA players to boost efficiency of NBA offenses",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "api",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "pytorch",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/tajsharma/sta141projects/blob/main/final.ipynb",
     },
     {
-      name: "3d Object viewer",
+      name: "Task Tracker",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A command-line task management application developed in Java. It allows users to keep track of/update various info of their tasks, while creating a comprehensive summary.",
       tags: [
         {
-          name: "react",
+          name: "Java",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "design-patterns",
+          color: "green-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/tajsharma/softwareEngineering/tree/main/TM",
+    },
+    {
+      name: "Connect4 AI",
+      description:
+        "Developed algorithm to play connect4 via command line or a gui using PyGame. Allows users to play against different types of AI and even make the AI go against another AI",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "pygame",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "AI",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "fashion design app",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/tajsharma/connect4ai",
     },
   ];
   
