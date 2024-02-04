@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { menu, close, logo} from '../assets';
+import { menu, close, logo,linkedin_logo} from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
