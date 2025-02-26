@@ -75,6 +75,7 @@ const Works = () => {
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >         
         Section under maintenance. Check back soon:)
+        my work is also available on github!
        
         </motion.p>
       </div>
