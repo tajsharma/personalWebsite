@@ -25,22 +25,33 @@ const Navbar = () => {
           <img src={logo} alt="Taj Sharma" className="w-8 h-9 object-contain" />
         </Link>
 
-        {/* Desktop links */}
-        <ul className="list-none hidden sm:flex flex-row gap-8">
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              onClick={() => setActive(link.title)}
-              className={`font-mono text-[13px] tracking-wide cursor-pointer transition-colors ${
-                active === link.title
-                  ? "text-accent"
-                  : "text-text-secondary hover:text-text-primary"
-              }`}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
+        {/* Desktop links + Resume button */}
+        {/* TODO: add public/taj-sharma-resume.pdf */}
+        <div className="hidden sm:flex items-center gap-8">
+          <ul className="list-none flex flex-row gap-8">
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                onClick={() => setActive(link.title)}
+                className={`font-mono text-[13px] tracking-wide cursor-pointer transition-colors ${
+                  active === link.title
+                    ? "text-accent"
+                    : "text-text-secondary hover:text-text-primary"
+                }`}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="/taj-sharma-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-[12px] tracking-wide border border-accent/50 text-accent rounded-md px-3.5 py-1.5 hover:bg-accent/10 transition-colors"
+          >
+            Resume ↗
+          </a>
+        </div>
 
         {/* Mobile menu */}
         <div className="sm:hidden flex items-center">
@@ -82,6 +93,17 @@ const Navbar = () => {
                     <a href={`#${link.id}`}>{link.title}</a>
                   </li>
                 ))}
+                <li className="pt-3 border-t border-border/50">
+                  <a
+                    href="/taj-sharma-resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[13px] tracking-wide text-accent"
+                    onClick={() => setToggle(false)}
+                  >
+                    Resume ↗
+                  </a>
+                </li>
               </ul>
             </div>
           )}

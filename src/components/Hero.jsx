@@ -57,10 +57,19 @@ const Hero = () => {
           </div>
 
           {/* CTAs */}
+          {/* TODO: add public/taj-sharma-resume.pdf */}
           <div className="flex flex-wrap gap-4 mt-8">
             <a
-              href="#projects"
+              href="/taj-sharma-resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-mono text-label font-semibold px-6 py-3 rounded-lg bg-accent text-primary hover:bg-accent/90 transition-colors"
+            >
+              View Resume ↗
+            </a>
+            <a
+              href="#projects"
+              className="font-mono text-label font-semibold px-6 py-3 rounded-lg border border-accent text-accent hover:bg-accent/10 transition-colors"
             >
               View Projects →
             </a>
