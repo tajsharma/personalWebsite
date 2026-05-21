@@ -26,7 +26,6 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop links + Resume button */}
-        {/* TODO: add public/taj-sharma-resume.pdf */}
         <div className="hidden sm:flex items-center gap-8">
           <ul className="list-none flex flex-row gap-8">
             {navLinks.map((link) => (

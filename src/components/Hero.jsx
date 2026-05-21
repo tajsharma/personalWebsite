@@ -57,7 +57,6 @@ const Hero = () => {
           </div>
 
           {/* CTAs */}
-          {/* TODO: add public/taj-sharma-resume.pdf */}
           <div className="flex flex-wrap gap-4 mt-8">
             <a
               href="/taj-sharma-resume.pdf"
