@@ -71,7 +71,7 @@ const Hero = () => {
               href="#projects"
               className="font-mono text-label font-semibold px-6 py-3 rounded-lg border border-accent text-accent hover:bg-accent/10 transition-colors"
             >
-              View Projects →
+              View Projects ↓
             </a>
             <a
               href="#contact"
