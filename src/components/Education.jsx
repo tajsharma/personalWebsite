@@ -11,8 +11,16 @@ const EducationCard = ({ edu, index }) => (
     variants={fadeIn("up", "spring", 0.1 * index, 0.6)}
     className="card-glow bg-surface rounded-xl p-5 flex items-start gap-4"
   >
-    <div className="w-2 h-2 rounded-full bg-accent mt-[6px] flex-shrink-0" />
-    <div>
+    {/* Logo slot — activates once file exists at public/logos/ path */}
+    <div className="w-9 h-9 flex-shrink-0 rounded-lg border border-border bg-white/5 flex items-center justify-center overflow-hidden">
+      <img
+        src={edu.logo}
+        alt={edu.institution}
+        className="w-full h-full object-contain p-1.5"
+        onError={(e) => { e.currentTarget.style.display = "none"; }}
+      />
+    </div>
+    <div className="min-w-0">
       <p className="font-heading font-semibold text-text-primary text-[15px] leading-snug">
         {edu.degree}
       </p>

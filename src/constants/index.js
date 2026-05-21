@@ -98,21 +98,25 @@ const experiences = [
 ];
 
 // ── Education ─────────────────────────────────────────────────────────────────
+// TODO: drop white/monochrome logo PNGs at public/logos/ to activate each slot
 const education = [
   {
     degree:      "BS Computer Science",
     institution: "UC Davis",
     date:        "Dec 2023",
+    logo:        "/logos/ucdavis.png",
   },
   {
     degree:      "Data Science & Machine Learning",
     institution: "MIT Schwarzman College of Computing",
     date:        "May 2024",
+    logo:        "/logos/mit.png",
   },
   {
     degree:      "Data Analytics Career Track",
     institution: "Springboard",
     date:        "Apr 2026",
+    logo:        "/logos/springboard.png",
   },
 ];
 
@@ -137,7 +141,7 @@ const projects = [
     context:     "Springboard · Mar 2026",
     description:
       "EDA on a financial news dataset to identify market trends and sentiment correlations. Cleaned missing values, normalized text, and engineered temporal features to surface volatility patterns across the dataset.",
-    metric:      null,
+    metric:      { value: "3,024", label: "Records Analyzed", type: "neutral" },
     tags: [
       { name: "Python" },
       { name: "Pandas" },
