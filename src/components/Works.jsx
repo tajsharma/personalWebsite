@@ -93,7 +93,6 @@ const ProjectCard = ({ project, featured }) => {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full font-mono text-[12px] text-text-secondary border border-border rounded-lg py-2.5 hover:border-accent hover:text-accent transition-colors"
             >
-              <img src={github} alt="GitHub" className="w-4 h-4 opacity-60" style={{ filter: "invert(1)" }} />
               View Project
             </a>
           )}
