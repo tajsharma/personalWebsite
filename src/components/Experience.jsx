@@ -69,10 +69,43 @@ const Experience = () => {
         <h2 className={styles.sectionHeadText}>Experience.</h2>
       </motion.div>
 
-      <div className="mt-12 flex flex-col gap-5">
-        {experiences.map((exp, index) => (
-          <ExperienceCard key={index} experience={exp} index={index} />
-        ))}
+      <div className="mt-12 flex flex-col">
+        {experiences.map((exp, index) => {
+          const isFirst = index === 0;
+          const isLast = index === experiences.length - 1;
+          const year = exp.date.match(/\d{4}/)?.[0] ?? "";
+          return (
+            <div key={index} className="flex items-stretch sm:gap-8">
+              {/* Timeline column — desktop only */}
+              <div className="hidden sm:flex flex-col items-center w-14 shrink-0">
+                {/* Top spacer / connecting line from previous row */}
+                {isFirst ? (
+                  <div className="h-6 shrink-0" />
+                ) : (
+                  <div className="h-6 w-px bg-accent/30 shrink-0" />
+                )}
+                {/* Node dot */}
+                <div
+                  className="w-2.5 h-2.5 rounded-full bg-accent shrink-0"
+                  style={{ boxShadow: "0 0 0 3px #050816" }}
+                />
+                {/* Year label */}
+                <span className="font-mono text-[10px] text-accent mt-1.5 shrink-0 tracking-wide leading-none">
+                  {year}
+                </span>
+                {/* Connecting line down to next card */}
+                {!isLast && (
+                  <div className="flex-1 w-px bg-accent/30 mt-2" />
+                )}
+              </div>
+
+              {/* Card */}
+              <div className={`flex-1 min-w-0 ${!isLast ? "pb-5" : ""}`}>
+                <ExperienceCard experience={exp} index={index} />
+              </div>
+            </div>
+          );
+        })}
       </div>
     </>
   );

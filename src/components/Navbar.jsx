@@ -16,21 +16,13 @@ const Navbar = () => {
         {/* Logo + identity */}
         <Link
           to="/"
-          className="flex items-center gap-3"
+          className="flex items-center"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
           <img src={logo} alt="Taj Sharma" className="w-8 h-9 object-contain" />
-          <div className="flex flex-col leading-none gap-0.5">
-            <span className="font-display font-bold text-text-primary text-[16px] tracking-tight">
-              Taj Sharma
-            </span>
-            <span className="font-mono text-accent text-[11px] uppercase tracking-widest">
-              Data Analyst
-            </span>
-          </div>
         </Link>
 
         {/* Desktop links */}

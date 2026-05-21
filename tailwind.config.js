@@ -13,8 +13,8 @@ module.exports = {
 
         // ── Text ─────────────────────────────────────
         "text-primary":   "#F1F5F9",
-        "text-secondary": "#94A3B8",
-        "text-muted":     "#475569",
+        "text-secondary": "#CBD5E1",
+        "text-muted":     "#94A3B8",
 
         // ── Accent — Electric Violet ──────────────────
         accent:       "#818CF8",
@@ -25,7 +25,7 @@ module.exports = {
         negative: "#F87171",
 
         // ── Legacy aliases (kept so any remaining refs don't break) ──
-        secondary:  "#94A3B8",
+        secondary:  "#CBD5E1",
         tertiary:   "#818CF8",
         "black-100": "#0D1117",
         "black-200": "#050816",
