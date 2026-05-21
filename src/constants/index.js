@@ -111,7 +111,7 @@ const projects = [
       { name: "Data Storytelling"   },
       { name: "Executive Reporting" },
     ],
-    source_code_link: null, // TODO: add project link
+    source_code_link: "https://public.tableau.com/app/profile/tajinder.sharma/viz/ChemCorpDataAnalysis_TajinderSharma1/Story1", // TODO: add project link
     featured:    true,
   },
   {
@@ -125,7 +125,7 @@ const projects = [
       { name: "Pandas" },
       { name: "EDA"    },
     ],
-    source_code_link: null, // TODO: add project link
+    source_code_link: "https://github.com/tajsharma/Market-Sentiment-Volatility-Analysis", 
     featured:    true,
   },
   {
@@ -139,7 +139,7 @@ const projects = [
       { name: "Data Viz"     },
       { name: "Heat Mapping" },
     ],
-    source_code_link: null, // TODO: add project link
+    source_code_link: "https://github.com/devikasharma04/EcoSIm", 
     featured:    true,
   },
   {
