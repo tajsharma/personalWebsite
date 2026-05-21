@@ -73,7 +73,7 @@ const Experience = () => {
         {experiences.map((exp, index) => {
           const isFirst = index === 0;
           const isLast = index === experiences.length - 1;
-          const year = exp.date.match(/\d{4}/)?.[0] ?? "";
+          const year = exp.year ?? exp.date.match(/\d{4}/)?.[0] ?? "";
           return (
             <div key={index} className="flex items-stretch sm:gap-8">
               {/* Timeline column — desktop only */}

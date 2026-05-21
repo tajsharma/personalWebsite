@@ -41,15 +41,31 @@ const skillGroups = [
 // ── Experience ────────────────────────────────────────────────────────────────
 const experiences = [
   {
+    title:        "Data Analytics Fellow",
+    company_name: "Springboard",
+    icon:         null,
+    iconText:     "SB",
+    iconBg:       "#131A2B",
+    date:         "Oct 2025 — Present",
+    year:         "2026",
+    points: [
+      "Translate complex business problems into actionable strategy by engineering data pipelines and visualizations (SQL, Python, Tableau) to drive stakeholder decision-making.",
+      "Completed an intensive 400+ hour program, independently architecting end-to-end data solutions and conducting advanced exploratory data analysis.",
+      "Built an Olist Marketplace operational dashboard in Tableau/SQL identifying revenue drivers and inefficiencies; conducted Python-driven sentiment analysis on financial news data to surface market volatility patterns.",
+    ],
+  },
+  {
     title:        "Substitute Teacher",
-    company_name: "Various Districts",
+    company_name: "Mad Science of DFW · The Education Team",
     icon:         null,
     iconText:     "ST",
     iconBg:       "#131A2B",
-    date:         "Feb 2025 — Present",
+    date:         "Jan 2025 — Present",
+    year:         "2025",
     points: [
-      "Adapt daily to new classroom environments, subjects, and student needs — building strong instincts for structured problem-solving under ambiguity.",
-      "Translate complex material into clear, digestible formats for audiences of 30+, reinforcing communication skills critical for data storytelling.",
+      "Manage shifting daily objectives across classroom environments, demonstrating adaptability and on-the-fly problem-solving.",
+      "Translate complex instructional material into digestible formats for audiences of 30+, reinforcing communication skills critical for data storytelling.",
+      "Establish rapport quickly and maintain structured, productive learning environments.",
     ],
   },
   {
@@ -59,6 +75,7 @@ const experiences = [
     iconText:     "CI",
     iconBg:       "#131A2B",
     date:         "Jan 2024 — Jan 2025",
+    year:         "2024",
     points: [
       "Built scalable SQL and Python data pipelines automating daily data preparation, eliminating manual effort and reducing errors across recurring workflows.",
       "Designed a centralized relational data model to clean and structure years of historical client data, laying the foundation for future BI dashboard automation.",
@@ -71,6 +88,7 @@ const experiences = [
     iconText:     null,
     iconBg:       "#131A2B",
     date:         "Jun 2023 — Aug 2023",
+    year:         "2023",
     points: [
       "Validated and optimized complex SQL queries for enterprise reporting pipelines, cutting data retrieval times by 15%.",
       "Built interactive visualizations that automated repetitive reporting tasks, freeing analyst time for higher-value work.",
