@@ -1,81 +1,102 @@
-import React,{ useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-
-import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { menu, close, logo,linkedin_logo} from '../assets';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { logo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  return (
-    <nav className = {`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
 
-      <div className='w-full flex justify-between items-center max-w-7kl mx-auto'>
+  return (
+    <nav
+      className={`${styles.paddingX} w-full flex items-center py-4 fixed top-0 z-20 bg-primary/95 backdrop-blur border-b border-border`}
+    >
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        {/* Logo + identity */}
         <Link
-          to = "/"
-          className='flex items-center gap-2'
-          onClick={()=>{
+          to="/"
+          className="flex items-center gap-3"
+          onClick={() => {
             setActive("");
-            window.scrollTo(0,0);
-          }
-          }
+            window.scrollTo(0, 0);
+          }}
         >
-          <img src = {logo} alt = "logo" className="w-10 h-11 object-contain"/>
-          <p className=' italic text-white text-[18px] font-bold cursor-pointer flex '>
-            Taj Sharma &nbsp;
-            <span className='sm:block hidden'> | Software Developer</span>
-          </p>
+          <img src={logo} alt="Taj Sharma" className="w-8 h-9 object-contain" />
+          <div className="flex flex-col leading-none gap-0.5">
+            <span className="font-display font-bold text-text-primary text-[16px] tracking-tight">
+              Taj Sharma
+            </span>
+            <span className="font-mono text-accent text-[11px] uppercase tracking-widest">
+              Data Analyst
+            </span>
+          </div>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((link)=> (
-            <li 
+        {/* Desktop links */}
+        <ul className="list-none hidden sm:flex flex-row gap-8">
+          {navLinks.map((link) => (
+            <li
               key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } italic hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}>
+              onClick={() => setActive(link.title)}
+              className={`font-mono text-[13px] tracking-wide cursor-pointer transition-colors ${
+                active === link.title
+                  ? "text-accent"
+                  : "text-text-secondary hover:text-text-primary"
+              }`}
+            >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items center'>
-          <img 
-            src={toggle ? close : menu}
-            alt='menu' 
-            className='w-[28px] h-[28[x] object-contain cursor-pointer'
-            onClick={()=>setToggle(!toggle)}
-          />
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 
-          bg-gradient-to-r from-gray-700 via-gray-900 to-black absolute top-20
-          right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-            <ul className='list-none flex justify-end items-start flex-col gap-4'>
-              {navLinks.map((link)=> (
-                <li 
-                  key={link.id}
-                  className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } italic hover:text-white text-[16px] font-medium cursor-pointer`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title)
-                    }}>
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-            
+        {/* Mobile menu */}
+        <div className="sm:hidden flex items-center">
+          <button
+            onClick={() => setToggle(!toggle)}
+            className="p-1 text-text-secondary hover:text-text-primary transition-colors"
+            aria-label="Toggle navigation"
+          >
+            {toggle ? (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            ) : (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg>
+            )}
+          </button>
 
+          {toggle && (
+            <div className="absolute top-[65px] right-4 bg-surface border border-border rounded-xl p-5 min-w-[180px] shadow-card">
+              <ul className="list-none flex flex-col gap-4">
+                {navLinks.map((link) => (
+                  <li
+                    key={link.id}
+                    onClick={() => {
+                      setToggle(false);
+                      setActive(link.title);
+                    }}
+                    className={`font-mono text-[13px] tracking-wide cursor-pointer transition-colors ${
+                      active === link.title
+                        ? "text-accent"
+                        : "text-text-secondary hover:text-text-primary"
+                    }`}
+                  >
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-
-
       </div>
-
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
