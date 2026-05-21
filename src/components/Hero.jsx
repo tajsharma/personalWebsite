@@ -36,7 +36,7 @@ const Hero = () => {
           </h1>
 
           {/* Tagline */}
-          <p className="font-display font-semibold text-h2 text-text-secondary mt-2 mb-5 leading-snug">
+          <p className="font-heading font-semibold text-h2 text-text-secondary mt-2 mb-5 leading-snug">
             Turning data into decisions.
           </p>
 
@@ -47,10 +47,10 @@ const Hero = () => {
           </p>
 
           {/* Availability pill */}
-          <div className="mt-4">
-            <span className="inline-flex items-center gap-2 border-2 border-accent/30 rounded-full px-3.5 py-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-positive flex-shrink-0" />
-              <span className="font-mono text-[12px] text-[#CBD5E1]">
+          <div className="mt-5">
+            <span className="inline-flex items-center gap-2.5 border-2 border-accent/30 rounded-full px-5 py-2.5">
+              <span className="w-2 h-2 rounded-full bg-positive flex-shrink-0" />
+              <span className="font-mono text-[15px] text-[#CBD5E1]">
                 Open to new roles
               </span>
             </span>

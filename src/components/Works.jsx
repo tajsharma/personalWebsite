@@ -57,7 +57,7 @@ const ProjectCard = ({ project, featured }) => {
 
       {/* Card body */}
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="font-display font-bold text-text-primary text-[18px] leading-snug mb-3">
+        <h3 className="font-heading font-bold text-text-primary text-[18px] leading-snug mb-3">
           {project.name}
         </h3>
         <p className="text-text-secondary text-[14px] leading-relaxed flex-1">

@@ -33,7 +33,8 @@ module.exports = {
       },
 
       fontFamily: {
-        display: ["Space Grotesk", "sans-serif"],
+        display: ["Satoshi", "Space Grotesk", "sans-serif"],
+        heading: ["Space Grotesk", "sans-serif"],
         sans:    ["Montserrat", "sans-serif"],
         mono:    ["JetBrains Mono", "monospace"],
       },

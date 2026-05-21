@@ -13,7 +13,7 @@ const EducationCard = ({ edu, index }) => (
   >
     <div className="w-2 h-2 rounded-full bg-accent mt-[6px] flex-shrink-0" />
     <div>
-      <p className="font-display font-semibold text-text-primary text-[15px] leading-snug">
+      <p className="font-heading font-semibold text-text-primary text-[15px] leading-snug">
         {edu.degree}
       </p>
       <p className="font-mono text-accent text-[11px] uppercase tracking-widest mt-1.5">
