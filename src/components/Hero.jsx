@@ -46,12 +46,12 @@ const Hero = () => {
             datasets into the decisions that move strategy.
           </p>
 
-          {/* Location pill */}
+          {/* Availability pill */}
           <div className="mt-4">
-            <span className="inline-flex items-center gap-2 border border-border rounded-full px-3.5 py-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-negative flex-shrink-0" />
-              <span className="font-mono text-text-muted text-[12px]">
-                Currently based in DFW
+            <span className="inline-flex items-center gap-2 border-2 border-accent/30 rounded-full px-3.5 py-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-positive flex-shrink-0" />
+              <span className="font-mono text-[12px] text-[#CBD5E1]">
+                Open to new roles
               </span>
             </span>
           </div>
@@ -73,19 +73,26 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Scroll indicator — now points to #projects since About is gone */}
+        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1, duration: 0.5 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2"
         >
-          <a href="#projects" aria-label="Scroll to Projects">
+          <a href="#projects" aria-label="Scroll to Projects" className="flex flex-col items-center gap-0.5">
             <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 1.8, repeat: Infinity, repeatType: "loop" }}
-              className="w-[1px] h-10 bg-gradient-to-b from-accent/60 to-transparent"
-            />
+              animate={{ y: [0, 7, 0] }}
+              transition={{ duration: 1.6, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }}
+              className="flex flex-col items-center"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="text-accent opacity-80">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="text-accent opacity-35 -mt-2">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </motion.div>
           </a>
         </motion.div>
       </div>
