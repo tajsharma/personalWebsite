@@ -1,4 +1,4 @@
-import { python_logo, inovum } from "../assets";
+import { inovum } from "../assets";
 
 // ── Navigation ────────────────────────────────────────────────────────────────
 export const navLinks = [

@@ -5,8 +5,6 @@ import { styles } from "../styles";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant, fadeIn } from "../utils/motion";
-import { github } from "../assets";
-
 // Metric callout — $41M gets risk-text (red), 1st gets positive (green), neutral gets accent
 const MetricCallout = ({ metric }) => {
   const colorClass =
