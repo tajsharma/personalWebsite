@@ -2,18 +2,10 @@ import { python_logo, inovum } from "../assets";
 
 // ── Navigation ────────────────────────────────────────────────────────────────
 export const navLinks = [
-  { id: "about",    title: "About"      },
-  { id: "work",     title: "Experience" },
-  { id: "projects", title: "Projects"   },
-  { id: "contact",  title: "Contact"    },
-];
-
-// ── About — skill category cards ─────────────────────────────────────────────
-const services = [
-  { title: "Data Analysis"             },
-  { title: "Data Visualization & BI"   },
-  { title: "Data Architecture & Tools" },
-  { title: "Python & SQL Development"  },
+  { id: "projects",  title: "Projects"   },
+  { id: "work",      title: "Experience" },
+  { id: "skills",    title: "Skills"     },
+  { id: "contact",   title: "Contact"    },
 ];
 
 // ── Skills grouped by category ────────────────────────────────────────────────
@@ -115,9 +107,9 @@ const projects = [
       "7-slide executive Tableau story dashboard identifying revenue leakage across a 45k-customer base. Surfaced a $41M revenue risk tied to 10% client churn and built quadrant-based investment frameworks with leadership recommendations.",
     metric:      { value: "$41M", label: "revenue risk surfaced", type: "negative" },
     tags: [
-      { name: "Tableau"              },
-      { name: "Data Storytelling"    },
-      { name: "Executive Reporting"  },
+      { name: "Tableau"             },
+      { name: "Data Storytelling"   },
+      { name: "Executive Reporting" },
     ],
     source_code_link: null, // TODO: add project link
     featured:    true,
@@ -166,4 +158,4 @@ const projects = [
   },
 ];
 
-export { services, skillGroups, experiences, education, projects };
+export { skillGroups, experiences, education, projects };

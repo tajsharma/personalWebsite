@@ -5,7 +5,7 @@ import { styles } from "../styles";
 const Hero = () => {
   return (
     <section className="relative w-full min-h-screen bg-primary flex items-center overflow-hidden">
-      {/* Subtle dot-grid background */}
+      {/* Dot-grid texture */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -14,7 +14,7 @@ const Hero = () => {
           backgroundSize: "32px 32px",
         }}
       />
-      {/* Soft accent glow, top-left */}
+      {/* Soft accent glow */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-accent/5 blur-3xl pointer-events-none" />
 
       <div className={`${styles.paddingX} max-w-7xl mx-auto w-full pt-28 pb-20`}>
@@ -36,19 +36,28 @@ const Hero = () => {
           </h1>
 
           {/* Tagline */}
-          <p className="font-display font-semibold text-h2 text-text-secondary mt-2 mb-6 leading-snug">
+          <p className="font-display font-semibold text-h2 text-text-secondary mt-2 mb-5 leading-snug">
             Turning data into decisions.
           </p>
 
-          {/* Bio */}
+          {/* Compressed bio — one tight sentence */}
           <p className={`${styles.heroSubText} max-w-xl`}>
-            I design pipelines, build dashboards, and surface the insights
-            that move strategy forward. UC&nbsp;Davis CS&nbsp;·&nbsp;Springboard
-            Analytics&nbsp;·&nbsp;MIT Data Science — based in California.
+            I build pipelines, design BI dashboards, and translate complex
+            datasets into the decisions that move strategy.
           </p>
 
+          {/* Location pill */}
+          <div className="mt-4">
+            <span className="inline-flex items-center gap-2 border border-border rounded-full px-3.5 py-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-negative flex-shrink-0" />
+              <span className="font-mono text-text-muted text-[12px]">
+                Currently based in DFW
+              </span>
+            </span>
+          </div>
+
           {/* CTAs */}
-          <div className="flex flex-wrap gap-4 mt-10">
+          <div className="flex flex-wrap gap-4 mt-8">
             <a
               href="#projects"
               className="font-mono text-label font-semibold px-6 py-3 rounded-lg bg-accent text-primary hover:bg-accent/90 transition-colors"
@@ -64,14 +73,14 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Scroll indicator */}
+        {/* Scroll indicator — now points to #projects since About is gone */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1, duration: 0.5 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2"
         >
-          <a href="#about" aria-label="Scroll to About">
+          <a href="#projects" aria-label="Scroll to Projects">
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 1.8, repeat: Infinity, repeatType: "loop" }}

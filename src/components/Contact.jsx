@@ -53,7 +53,13 @@ const Contact = () => {
         className="card-glow bg-surface rounded-2xl p-8 sm:p-10"
       >
         <p className={styles.sectionSubText}>Let's connect</p>
-        <h3 className={`${styles.sectionHeadText} mb-8`}>Contact.</h3>
+        <h3 className={`${styles.sectionHeadText} mb-3`}>Contact.</h3>
+
+        {/* Short personal note — replaces the old standalone About section's closing sentiment */}
+        <p className="text-text-secondary text-[15px] leading-relaxed mb-8 max-w-md">
+          Always open to conversations about data, analytics opportunities, or
+          new projects. Drop me a message.
+        </p>
 
         {sent ? (
           <div className="py-10 text-center">

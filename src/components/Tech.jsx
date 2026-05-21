@@ -46,4 +46,5 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+// id="skills" so the nav link #skills scrolls here
+export default SectionWrapper(Tech, "skills");
