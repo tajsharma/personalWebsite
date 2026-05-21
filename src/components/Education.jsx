@@ -11,8 +11,8 @@ const EducationCard = ({ edu, index }) => (
     variants={fadeIn("up", "spring", 0.1 * index, 0.6)}
     className="card-glow bg-surface rounded-xl p-5 flex items-start gap-4"
   >
-    {/* Logo slot — activates once file exists at public/logos/ path */}
-    <div className="w-9 h-9 flex-shrink-0 rounded-lg border border-border bg-white/5 flex items-center justify-center overflow-hidden">
+    {/* Logo tile — white bg so logos with white canvas render cleanly on dark card */}
+    <div className="w-12 h-12 flex-shrink-0 rounded-lg bg-white flex items-center justify-center overflow-hidden">
       <img
         src={edu.logo}
         alt={edu.institution}
