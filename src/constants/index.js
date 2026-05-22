@@ -1,4 +1,4 @@
-import { inovum } from "../assets";
+import { inovum, springboard, classicinsurance, madscience } from "../assets";
 
 // ── Navigation ────────────────────────────────────────────────────────────────
 export const navLinks = [
@@ -43,7 +43,7 @@ const experiences = [
   {
     title:        "Data Analytics Fellow",
     company_name: "Springboard",
-    icon:         null,
+    icon:         springboard,
     iconText:     "SB",
     iconBg:       "#131A2B",
     date:         "Oct 2025 — Present",
@@ -57,7 +57,7 @@ const experiences = [
   {
     title:        "Substitute Teacher",
     company_name: "Mad Science of DFW · The Education Team",
-    icon:         null,
+    icon:         madscience,
     iconText:     "ST",
     iconBg:       "#131A2B",
     date:         "Jan 2025 — Present",
@@ -71,7 +71,7 @@ const experiences = [
   {
     title:        "Freelance Data Consultant",
     company_name: "Classic Insurance Agency (Remote)",
-    icon:         null,
+    icon:         classicinsurance,
     iconText:     "CI",
     iconBg:       "#131A2B",
     date:         "Jan 2024 — Jan 2025",
