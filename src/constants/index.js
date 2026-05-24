@@ -11,38 +11,35 @@ export const navLinks = [
 // ── Skills grouped by category ────────────────────────────────────────────────
 const skillGroups = [
   {
-    category: "Languages & Querying",
+    category: "Data Engineering",
     skills: [
-      { name: "Python", detail: "Pandas, PySpark" },
-      { name: "SQL",    detail: "PostgreSQL, MySQL" },
-      { name: "Bash"   },
-    ],
-  },
-  {
-    category: "Pipelines & Orchestration",
-    skills: [
-      { name: "Apache Airflow" },
+      { name: "SQL",           detail: "PostgreSQL, MySQL" },
+      { name: "Python",        detail: "Pandas, PySpark" },
       { name: "dbt"            },
-      { name: "Apache Spark"   },
+      { name: "Apache Airflow" },
       { name: "ETL / ELT"      },
+      { name: "Data Modeling", detail: "Dimensional" },
+      { name: "Snowflake",     detail: "in progress" },
     ],
   },
   {
-    category: "Storage & Warehousing",
+    category: "Software Engineering",
     skills: [
-      { name: "Data Warehousing", detail: "Dimensional Modeling" },
-      { name: "Relational DB Design" },
-      { name: "Data Lakes"           },
-      { name: "API Integration"      },
+      { name: "Java"       },
+      { name: "Spring Boot"},
+      { name: "Angular"    },
+      { name: "Docker"     },
+      { name: "Git"        },
+      { name: "REST APIs"  },
+      { name: "Bash"       },
     ],
   },
   {
-    category: "Platform & Tooling",
+    category: "Analytics & Visualization",
     skills: [
-      { name: "Docker" },
-      { name: "Git"    },
-      { name: "CI/CD"  },
-      { name: "Cloud", detail: "AWS / GCP" },
+      { name: "Tableau"          },
+      { name: "EDA"              },
+      { name: "Data Storytelling"},
     ],
   },
 ];
@@ -78,7 +75,7 @@ const experiences = [
     ],
   },
   {
-    title:        "Freelance Data Consultant",
+    title:        "Freelance Software Developer",
     company_name: "Classic Insurance Agency (Remote)",
     icon:         classicinsurance,
     iconText:     "CI",
@@ -86,12 +83,25 @@ const experiences = [
     date:         "Jan 2024 — Jan 2025",
     year:         "2024",
     points: [
-      "Built scalable SQL and Python data pipelines automating daily data preparation, eliminating manual effort and reducing errors across recurring workflows.",
-      "Designed a centralized relational data model to clean and structure years of historical client data, laying the foundation for future BI dashboard automation.",
+      "Designed and built a full web application from scratch, independently owning the frontend, backend, and database layers end-to-end for an insurance agency client.",
+      "Designed the relational database schema to model years of historical client records, structuring the data layer for reliable querying and future reporting workflows.",
     ],
   },
   {
-    title:        "Data Analyst Intern",
+    title:        "Freelance Developer",
+    company_name: "Solucky (Remote)",
+    icon:         null,
+    iconText:     "SL",
+    iconBg:       "#131A2B",
+    date:         "2024",
+    year:         "2024",
+    points: [
+      "Built a full multi-page React website for a fashion lifestyle brand, architecting 8 distinct pages with React Router DOM.",
+      "Implemented an interactive digital magazine feature using react-pageflip, translating the client's print catalog into a browser-based flipbook experience.",
+    ],
+  },
+  {
+    title:        "Software Engineer Intern",
     company_name: "Inovum IT Solutions — Barcelona, ES",
     icon:         inovum,
     iconText:     null,
@@ -99,9 +109,9 @@ const experiences = [
     date:         "Jun 2023 — Aug 2023",
     year:         "2023",
     points: [
-      "Validated and optimized complex SQL queries for enterprise reporting pipelines, cutting data retrieval times by 15%.",
-      "Built interactive visualizations that automated repetitive reporting tasks, freeing analyst time for higher-value work.",
-      "Collaborated in an agile team of 6 using Jira and Slack across a cross-functional, international environment.",
+      "Built full-stack features using Java (Spring Boot) on the backend and Angular on the frontend, shipping functionality end-to-end across a multi-tier enterprise application.",
+      "Designed and optimized relational data models and SQL queries powering the application's data layer, improving retrieval performance for enterprise reporting.",
+      "Containerized services with Docker and collaborated in a cross-functional agile team of 6 using Jira and Confluence across an international environment.",
     ],
   },
 ];
@@ -187,6 +197,25 @@ const projects = [
     source_code_link: "https://github.com/tajsharma/sta141projects/blob/main/final.ipynb",
     featured:    false,
   },
+  // TODO: fill in description and link when ready
+  // {
+  //   name:        "NBA Value-Per-Dollar SQL Analysis",
+  //   context:     "Personal Project · 2026",
+  //   description: "TODO",
+  //   metric:      null,
+  //   tags:        [{ name: "SQL" }, { name: "Data Modeling" }, { name: "PostgreSQL" }],
+  //   source_code_link: "TODO",
+  //   featured:    false,
+  // },
+  // {
+  //   name:        "SaaS Retention Data Pipeline",
+  //   context:     "Personal Project · 2026",
+  //   description: "TODO",
+  //   metric:      null,
+  //   tags:        [{ name: "Python" }, { name: "ETL / ELT" }, { name: "dbt" }],
+  //   source_code_link: "TODO",
+  //   featured:    false,
+  // },
 ];
 
 export { skillGroups, experiences, education, projects };
