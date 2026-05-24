@@ -26,7 +26,7 @@ const Hero = () => {
         >
           {/* Eyebrow */}
           <p className="font-mono text-accent text-label uppercase tracking-widest mb-5">
-            // Data Analyst
+            // Data Engineer
           </p>
 
           {/* Name */}
@@ -37,13 +37,13 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="font-heading font-semibold text-h2 text-text-secondary mt-2 mb-5 leading-snug">
-            Turning data into decisions.
+            Building the pipelines that move data.
           </p>
 
           {/* Compressed bio — one tight sentence */}
           <p className={`${styles.heroSubText} max-w-xl`}>
-            I build pipelines, design BI dashboards, and translate complex
-            datasets into the decisions that move strategy.
+            I build batch and streaming pipelines, model warehouses, and turn
+            raw, messy data into reliable, production-ready datasets.
           </p>
 
           {/* Availability pill */}

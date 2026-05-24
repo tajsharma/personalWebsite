@@ -11,29 +11,38 @@ export const navLinks = [
 // ── Skills grouped by category ────────────────────────────────────────────────
 const skillGroups = [
   {
-    category: "Data Analysis",
+    category: "Languages & Querying",
     skills: [
+      { name: "Python", detail: "Pandas, PySpark" },
       { name: "SQL",    detail: "PostgreSQL, MySQL" },
-      { name: "Python", detail: "Pandas, NumPy"     },
-      { name: "Excel",  detail: "Advanced"          },
+      { name: "Bash"   },
     ],
   },
   {
-    category: "Visualization & BI",
+    category: "Pipelines & Orchestration",
     skills: [
-      { name: "Tableau"    },
-      { name: "Power BI"   },
-      { name: "Matplotlib" },
-      { name: "Seaborn"    },
+      { name: "Apache Airflow" },
+      { name: "dbt"            },
+      { name: "Apache Spark"   },
+      { name: "ETL / ELT"      },
     ],
   },
   {
-    category: "Data Architecture & Tools",
+    category: "Storage & Warehousing",
     skills: [
+      { name: "Data Warehousing", detail: "Dimensional Modeling" },
       { name: "Relational DB Design" },
-      { name: "Data Warehousing"     },
+      { name: "Data Lakes"           },
       { name: "API Integration"      },
-      { name: "Git"                  },
+    ],
+  },
+  {
+    category: "Platform & Tooling",
+    skills: [
+      { name: "Docker" },
+      { name: "Git"    },
+      { name: "CI/CD"  },
+      { name: "Cloud", detail: "AWS / GCP" },
     ],
   },
 ];
