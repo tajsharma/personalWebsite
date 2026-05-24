@@ -57,7 +57,7 @@ const Contact = () => {
 
         {/* Short personal note — replaces the old standalone About section's closing sentiment */}
         <p className="text-text-secondary text-[15px] leading-relaxed mb-8 max-w-md">
-          Always open to conversations about data, analytics opportunities, or
+          Always open to conversations about data, data engineering opportunities, or
           new projects. Drop me a message.
         </p>
 
