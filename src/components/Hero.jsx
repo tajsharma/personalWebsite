@@ -37,13 +37,13 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="font-heading font-semibold text-h2 text-text-secondary mt-2 mb-5 leading-snug">
-            Building the pipelines that move data.
+            Software engineer turned data infrastructure.
           </p>
 
           {/* Compressed bio — one tight sentence */}
           <p className={`${styles.heroSubText} max-w-xl`}>
-            I build batch and streaming pipelines, model warehouses, and turn
-            raw, messy data into reliable, production-ready datasets.
+            B.S. CS from UC Davis — I shipped full-stack apps and relational
+            data systems for clients, then specialized into the modern data stack.
           </p>
 
           {/* Availability pill */}
